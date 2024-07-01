@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-img {
+.logo-logo {
     width: 200px;
 }
 
@@ -184,4 +184,58 @@ footer{
 }
 .error-page h2{
     margin-top: 2rem;
+}
+
+/* Posts */
+.posts-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+}
+.post {
+    background: white;
+    padding: 1rem;
+    border-radius: 5px;
+    padding-bottom: 2rem;
+    transition: var(--transition);
+    cursor: default;
+}
+.post:hover {
+    box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.1);
+}
+.post-thumbnail{
+    border-radius: 5px;
+    overflow: hidden;
+    height: 16rem;
+}
+.post-thumbnail img{
+    width: 100%;
+}
+.post-content{
+    margin-top: -2rem;
+}
+.post-content h3{
+    margin: 1rem 0 0.6rem;
+}
+.post-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 2rem;
+}
+.post-author{
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+.post-author-avatar{
+
+    width: 2.5rem;
+    aspect-ratio: 1/1;
+    border-radius: 20px;
+    overflow: hidden;
+    
+}
+.post-author-avatar img{
+    width: 100%;
 }
